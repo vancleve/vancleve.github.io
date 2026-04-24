@@ -1,0 +1,225 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+interface Pub {
+  citation: string;
+  doi?: string;
+  doiLabel?: string;
+}
+
+const publications: Pub[] = [
+  {
+    citation:
+      'Thomson L., D. P. Espinosa, Y. Brandvain, and J. Van Cleve, 2024 Linked selection and the evolution of altruism in family-structured populations. <em>Ecology and Evolution</em> 14: e10980.',
+    doi: 'https://doi.org/10.1002/ece3.10980',
+    doiLabel: '10.1002/ece3.10980',
+  },
+  {
+    citation:
+      'Van Cleve J., 2023 Evolutionarily stable strategy analysis and its links to demography and genetics through invasion fitness. <em>Philosophical Transactions of the Royal Society B: Biological Sciences</em> 378: 20210496.',
+    doi: 'https://doi.org/10.1098/rstb.2021.0496',
+    doiLabel: '10.1098/rstb.2021.0496',
+  },
+  {
+    citation:
+      'Greene K. M., J. Van Cleve, and S. J. Price, 2023 Salamander movement propensity resists effects of supraseasonal drought. <em>Ichthyology &amp; Herpetology</em> 111: 109–118.',
+    doi: 'https://doi.org/10.1643/h2022051',
+    doiLabel: '10.1643/h2022051',
+  },
+  {
+    citation:
+      'Tate A. T., and J. Van Cleve, 2022 Bet-hedging in innate and adaptive immune systems. <em>Evolution, Medicine, and Public Health</em> 10: 256–265.',
+    doi: 'https://doi.org/10.1093/emph/eoac021',
+    doiLabel: '10.1093/emph/eoac021',
+  },
+  {
+    citation:
+      'McGlothlin J. W., E. Akçay, E. D. Brodie III, A. J. Moore, and J. Van Cleve, 2022 A synthesis of game theory and quantitative genetic models of social evolution. <em>Journal of Heredity</em> 113: 109–119.',
+    doi: 'https://doi.org/10.1093/jhered/esab064',
+    doiLabel: '10.1093/jhered/esab064',
+  },
+  {
+    citation:
+      'Dunoyer L. A., A. W. Seifert, and J. Van Cleve, 2021 Evolutionary bedfellows: Reconstructing the ancestral state of autotomy and regeneration. <em>Journal of Experimental Zoology Part B: Molecular and Developmental Evolution</em> 336: 94–115.',
+    doi: 'https://doi.org/10.1002/jez.b.22974',
+    doiLabel: '10.1002/jez.b.22974',
+  },
+  {
+    citation:
+      'Akçay E., and J. Van Cleve, 2021 Internalizing cooperative norms in group-structured populations, pp. 26–44 in <em>Cooperation and Conflict: The Interaction of Opposites in Shaping Social Behavior</em>, edited by Brosnan S. F., Wilczynski W. Cambridge University Press, Cambridge, UK.',
+  },
+  {
+    citation:
+      'Andris C., X. Liu, J. Mitchell, J. O\'Dwyer, and J. Van Cleve, 2021 Threads across the urban fabric: Youth mentorship relationships as neighborhood bridges. <em>Journal of Urban Affairs</em> 43: 77–92.',
+    doi: 'https://doi.org/10.1080/07352166.2019.1662726',
+    doiLabel: '10.1080/07352166.2019.1662726',
+  },
+  {
+    citation:
+      'Van Cleve J., 2020 Building a synthetic basis for kin selection and evolutionary game theory using population genetics. <em>Theoretical Population Biology</em> 133: 65–70.',
+    doi: 'https://doi.org/10.1016/j.tpb.2020.03.001',
+    doiLabel: '10.1016/j.tpb.2020.03.001',
+  },
+  {
+    citation:
+      'Altenberg L., N. Creanza, L. Fogarty, L. Hadany, O. Kolodny, et al., 2019 Some topics in theoretical population genetics: Editorial commentaries on a selection of Marc Feldman\'s TPB papers. <em>Theoretical Population Biology</em> 129: 4–8.',
+    doi: 'https://doi.org/10.1016/j.tpb.2018.10.003',
+    doiLabel: '10.1016/j.tpb.2018.10.003',
+  },
+  {
+    citation:
+      'Estrela S., E. Libby, J. Van Cleve, F. Débarre, M. Deforet, et al., 2019 Environmentally mediated social dilemmas. <em>Trends in Ecology &amp; Evolution</em> 34: 6–18.',
+    doi: 'https://doi.org/10.1016/j.tree.2018.10.004',
+    doiLabel: '10.1016/j.tree.2018.10.004',
+  },
+  {
+    citation:
+      'Kessinger T., and J. Van Cleve, 2018 Genetic draft and valley crossing. Preprint.',
+    doi: 'https://dx.doi.org/10.1101/383737',
+    doiLabel: 'doi: 10.1101/383737',
+  },
+  {
+    citation:
+      'Van Cleve J., 2017 Stags, hawks, and doves: social evolution theory and individual variation in cooperation. <em>Integrative and Comparative Biology</em> 57: 566–579.',
+    doi: 'https://doi.org/10.1093/icb/icx071',
+    doiLabel: '10.1093/icb/icx071',
+  },
+  {
+    citation:
+      'Lehmann L., C. Mullon, E. Akçay, and J. Van Cleve, 2016 Invasion fitness, inclusive fitness, and reproductive numbers in heterogeneous populations. <em>Evolution</em> 70: 1689–1702.',
+    doi: 'https://doi.org/10.1111/evo.12980',
+    doiLabel: '10.1111/evo.12980',
+  },
+  {
+    citation:
+      'Andris C., L. Adler, C. Atwater, J. Van Cleve, and J. O\'Dwyer, 2016 Assessing an Educational Mentorship Program in an Urban Context.',
+  },
+  {
+    citation:
+      'Wilkins J. F., F. Úbeda, and J. Van Cleve, 2016 The evolving landscape of imprinted genes in humans and mice: Conflict among alleles, genes, tissues, and kin. <em>BioEssays</em> 38: 482–489.',
+    doi: 'https://doi.org/10.1002/bies.201500198',
+    doiLabel: '10.1002/bies.201500198',
+  },
+  {
+    citation:
+      'Van Cleve J., 2016 Cooperation, conformity, and the coevolutionary problem of trait associations. <em>Journal of Theoretical Biology</em> 396: 13–24.',
+    doi: 'https://doi.org/10.1016/j.jtbi.2016.02.012',
+    doiLabel: '10.1016/j.jtbi.2016.02.012',
+  },
+  {
+    citation:
+      'Akçay E., and J. Van Cleve, 2016 There is no fitness but fitness, and the lineage is its bearer. <em>Philosophical Transactions of the Royal Society B</em> 371: 20150085.',
+    doi: 'https://doi.org/10.1098/rstb.2015.0085',
+    doiLabel: '10.1098/rstb.2015.0085',
+  },
+  {
+    citation:
+      'Akçay E., T. A. Linksvayer, and J. Van Cleve, 2015 Bridging social evolution theory and emerging empirical approaches to social behavior. <em>Current Opinion in Behavioral Sciences</em> 6: 59–64.',
+    doi: 'https://doi.org/10.1016/j.cobeha.2015.09.002',
+    doiLabel: '10.1016/j.cobeha.2015.09.002',
+  },
+  {
+    citation:
+      'Van Cleve J., 2015 Social evolution and genetic interactions in the short and long term. <em>Theoretical Population Biology</em> 103: 2–26.',
+    doi: 'https://doi.org/10.1016/j.tpb.2015.05.002',
+    doiLabel: '10.1016/j.tpb.2015.05.002',
+  },
+  {
+    citation:
+      'Van Cleve J., and D. B. Weissman, 2015 Measuring ruggedness in fitness landscapes. <em>Proceedings of the National Academy of Sciences USA</em> 112: 7345–7346.',
+    doi: 'https://doi.org/10.1073/pnas.1507916112',
+    doiLabel: '10.1073/pnas.1507916112',
+  },
+  {
+    citation:
+      'Servedio M. R., Y. Brandvain, S. Dhole, C. L. Fitzpatrick, E. E. Goldberg, et al., 2014 Not just a Theory—The utility of mathematical models in evolutionary biology. <em>PLoS Biology</em> 12: e1002017.',
+    doi: 'https://doi.org/10.1371/journal.pbio.1002017',
+    doiLabel: '10.1371/journal.pbio.1002017',
+  },
+  {
+    citation:
+      'Van Cleve J., and E. Akçay, 2014 Pathways to social evolution: reciprocity, relatedness, and synergy. <em>Evolution</em> 68: 2245–2258.',
+    doi: 'https://doi.org/10.1111/evo.12438',
+    doiLabel: '10.1111/evo.12438',
+  },
+  {
+    citation:
+      'Van Cleve J., and L. Lehmann, 2013 Stochastic stability and the evolution of coordination in spatially structured populations. <em>Theoretical Population Biology</em> 89: 75–87.',
+    doi: 'https://doi.org/10.1016/j.tpb.2013.08.006',
+    doiLabel: '10.1016/j.tpb.2013.08.006',
+  },
+  {
+    citation:
+      'Akçay E., and J. Van Cleve, 2012 Behavioral responses in structured populations pave the way to group optimality. <em>American Naturalist</em> 179: 257–269.',
+    doi: 'https://doi.org/10.1086/663691',
+    doiLabel: '10.1086/663691',
+  },
+  {
+    citation:
+      'Brandvain Y., J. Van Cleve, F. Úbeda, and J. F. Wilkins, 2011 Demography, kinship, and the evolving theory of genomic imprinting. <em>Trends in Genetics</em> 27: 251–257.',
+    doi: 'https://doi.org/10.1016/j.tig.2011.04.005',
+    doiLabel: '10.1016/j.tig.2011.04.005',
+  },
+  {
+    citation:
+      'Liberman U., J. Van Cleve, and M. W. Feldman, 2011 On the evolution of mutation in changing environments: recombination and phenotypic switching. <em>Genetics</em> 187: 837–851.',
+    doi: 'https://doi.org/10.1534/genetics.110.123620',
+    doiLabel: '10.1534/genetics.110.123620',
+  },
+  {
+    citation:
+      'Van Cleve J., M. W. Feldman, and L. Lehmann, 2010 How demography, life history, and kinship shape the evolution of genomic imprinting. <em>American Naturalist</em> 176: 440–455.',
+    doi: 'https://doi.org/10.1086/656277',
+    doiLabel: '10.1086/656277',
+  },
+  {
+    citation:
+      'Akçay E., J. Van Cleve, M. W. Feldman, and J. Roughgarden, 2009 A theory for the evolution of other-regard integrating proximate and ultimate perspectives. <em>Proceedings of the National Academy of Sciences USA</em> 106: 19061–19066.',
+    doi: 'https://doi.org/10.1073/pnas.0904357106',
+    doiLabel: '10.1073/pnas.0904357106',
+  },
+  {
+    citation:
+      'Salathé M., J. Van Cleve, and M. W. Feldman, 2009 Evolution of stochastic switching rates in asymmetric fitness landscapes. <em>Genetics</em> 182: 1159–1164.',
+    doi: 'https://doi.org/10.1534/genetics.109.103333',
+    doiLabel: '10.1534/genetics.109.103333',
+  },
+  {
+    citation:
+      'Van Cleve J., and M. W. Feldman, 2008 Stable long-period cycling and complex dynamics in a single-locus fertility model with genomic imprinting. <em>Journal of Mathematical Biology</em> 57: 243–264.',
+    doi: 'https://doi.org/10.1007/s00285-008-0156-4',
+    doiLabel: '10.1007/s00285-008-0156-4',
+  },
+  {
+    citation:
+      'Van Cleve J., and M. W. Feldman, 2007 Sex-specific viability, sex linkage and dominance in genomic imprinting. <em>Genetics</em> 176: 1101–1118.',
+    doi: 'https://doi.org/10.1534/genetics.107.071555',
+    doiLabel: '10.1534/genetics.107.071555',
+  },
+  {
+    citation:
+      'Guralnick R., and J. Van Cleve, 2005 Strengths and weaknesses of museum and national survey data sets for predicting regional species richness: comparative and combined approaches. <em>Diversity and Distributions</em> 11: 349–359.',
+    doi: 'https://doi.org/10.1111/j.1366-9516.2005.00164.x',
+    doiLabel: '10.1111/j.1366-9516.2005.00164.x',
+  },
+  {
+    citation:
+      'Hoke K. L., A. B. Barron, M. E. Hauber, M. Kopp, and J. Van Cleve, Sensitive periods and the ontogenetic shape of behavioral plasticity. In preparation.',
+  },
+];
+---
+<Layout title="Publications" currentPage="publications">
+  <ul class="pub-list">
+    {publications.map(pub => (
+      <li>
+        <span set:html={pub.citation} />
+        {pub.doi && (
+          <>
+            {' '}
+            <a href={pub.doi} target="_blank" rel="noopener">{pub.doiLabel}</a>
+          </>
+        )}
+      </li>
+    ))}
+  </ul>
+</Layout>

@@ -1,0 +1,74 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  currentPage?: string;
+}
+
+const { title, currentPage } = Astro.props;
+const pageTitle = title ? `${title} | van cleve research group` : 'van cleve research group';
+
+const navLinks = [
+  { href: '/research/',      label: 'Research' },
+  { href: '/publications/',  label: 'Publications' },
+  { href: '/teaching/',      label: 'Teaching' },
+  { href: '/people/',        label: 'People' },
+  { href: '/software/',      label: 'Software' },
+  { href: '/join/',          label: 'Join' },
+];
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Van Cleve Research Group – theoretical evolution & ecology at the University of Kentucky" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>{pageTitle}</title>
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="site-header">
+      <a href="/"><p class="site-title">van cleve research group</p></a>
+      <p class="site-tagline">theoretical evolution &amp; ecology @ UK</p>
+      <nav class="primary" aria-label="Primary navigation">
+        <ul>
+          {navLinks.map(link => (
+            <li>
+              <a
+                href={link.href}
+                aria-current={currentPage === link.label.toLowerCase() ? 'page' : undefined}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
+
+    <div class="site-body">
+      <main>
+        <slot />
+      </main>
+
+      <aside class="sidebar">
+        <p class="sidebar-section-title">Elsewhere</p>
+        <ul>
+          <li><a href="http://scholar.google.com/citations?user=-F-MKiQAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://ecoevo.social/@jeremyvancleve" target="_blank" rel="noopener">Mastodon</a></li>
+          <li><a href="http://twitter.com/jeremyvancleve" target="_blank" rel="noopener">Twitter / X</a></li>
+          <li><a href="http://github.com/vancleve" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="http://bio.as.uky.edu/" target="_blank" rel="noopener">UK Biology</a></li>
+          <li><a href="mailto:jvancleve@uky.edu">Contact</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer class="site-footer">
+      &copy; van cleve research group
+    </footer>
+  </div>
+</body>
+</html>
