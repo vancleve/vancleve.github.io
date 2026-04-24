@@ -141,6 +141,29 @@ ol, ul.content-list {
 
 ol li, ul.content-list li { margin-bottom: .5rem; }
 
+/* Default prose lists (Markdown-rendered, no explicit class) */
+main ul:not([class]),
+main ol:not([class]) {
+  padding-left: 1.5rem;
+  margin-bottom: .9rem;
+}
+main ul:not([class]) { list-style: disc; }
+main ol:not([class]) { list-style: decimal; }
+main ul:not([class]) li,
+main ol:not([class]) li { margin-bottom: .45rem; }
+main ul:not([class]) ul { list-style: circle; margin: .3rem 0 .3rem 0; }
+
+/* People page: role label (italic paragraph immediately after h3) */
+main h3 + p > em:only-child {
+  font-style: normal;
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #888;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+}
+
 /* Bullet-style list with ■ (used on original site) */
 ul.bulleted { list-style: none; padding-left: 0; }
 ul.bulleted li { padding-left: 1.3em; text-indent: -1.3em; margin-bottom: .45rem; }
