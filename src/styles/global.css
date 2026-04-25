@@ -4,7 +4,7 @@
 html { font-size: 16px; }
 
 body {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
   font-size: 1rem;
   line-height: 1.65;
   color: #222;
@@ -34,18 +34,17 @@ img { max-width: 100%; height: auto; display: block; }
 .site-header a:hover { text-decoration: none; color: #ccc; }
 
 .site-title {
-  font-family: 'Palatino Linotype', Palatino, 'Book Antiqua', serif;
+  font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
   font-size: 1.9rem;
-  font-weight: normal;
-  letter-spacing: .03em;
+  font-weight: normal;  line-height: 1.1;  letter-spacing: .03em;
   color: #fff;
 }
 
 .site-tagline {
-  font-family: Georgia, serif;
+  font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
   font-size: .85rem;
-  color: #aaa;
-  margin-top: .15rem;
+  color: #fff;
+  margin-top: 0;
   font-style: italic;
   letter-spacing: .04em;
 }
@@ -204,7 +203,7 @@ ul.bulleted li::before { content: "■ "; color: #555; }
 /* ─── Footer ────────────────────────────────────────────────── */
 .site-footer {
   background: #1a1a1a;
-  color: #777;
+  color: #cdcdcd;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: .75rem;
   text-align: center;
