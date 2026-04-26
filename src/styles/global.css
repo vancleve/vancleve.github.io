@@ -99,6 +99,7 @@ main {
   flex: 0 0 170px;
   font-size: .82rem;
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  border-bottom: 1px solid #ddd;
 }
 
 .sidebar-section-title {
@@ -107,8 +108,11 @@ main {
   letter-spacing: .14em;
   text-transform: uppercase;
   color: #888;
+  margin-top: .6rem;
   margin-bottom: .6rem;
+  padding-top: .35rem;
   padding-bottom: .35rem;
+  border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
 
@@ -210,13 +214,6 @@ ul.bulleted li::before { content: "■ "; color: #555; }
   padding: .9rem 1rem;
 }
 
-/* ─── Home page heron image ──────────────────────────────────── */
-.heron-image {
-  float: right;
-  margin: 0 0 1rem 1.5rem;
-  max-width: 180px;
-}
-
 .news-item {
   padding: .4rem 0;
   border-bottom: 1px solid #eee;
@@ -227,6 +224,5 @@ ul.bulleted li::before { content: "■ "; color: #555; }
 @media (max-width: 680px) {
   .site-body { flex-direction: column; }
   .sidebar { flex: none; width: 100%; border-top: 1px solid #ddd; padding-top: 1rem; }
-  .heron-image { float: none; max-width: 100%; margin: 0 0 1rem 0; }
   nav.primary li a { padding: .45rem .7rem; font-size: .7rem; }
 }
