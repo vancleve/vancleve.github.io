@@ -34,6 +34,8 @@ jobs:
 
       - name: Build site
         run: npm run build
+        env:
+          ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
