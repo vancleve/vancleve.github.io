@@ -1,3 +1,6 @@
+/* ─── Utilities ────────────────────────────────────────────── */
+.centered-img { display: block; margin-left: auto; margin-right: auto; }
+
 /* ─── Reset & base ─────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -28,6 +31,7 @@ img { max-width: 100%; height: auto; display: block; }
 .site-header {
   background: #1a1a1a;
   padding: 1.5rem 2rem 0;
+  text-align: center;
 }
 
 .site-header a { color: #fff; }
@@ -64,7 +68,7 @@ nav.primary ul {
 nav.primary li a {
   display: block;
   padding: .55rem 1.1rem;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: Andika, Arial, sans-serif;
   font-size: .75rem;
   font-weight: 700;
   letter-spacing: .12em;
@@ -98,7 +102,7 @@ main {
 .sidebar {
   flex: 0 0 170px;
   font-size: .82rem;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: Andika, Arial, sans-serif;
   border-bottom: 1px solid #ddd;
 }
 
@@ -163,7 +167,7 @@ main h3 + p > em:only-child {
   text-transform: uppercase;
   letter-spacing: .1em;
   color: #888;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: Andika, Arial, sans-serif;
   font-weight: 700;
 }
 
@@ -194,7 +198,7 @@ ul.bulleted li::before { content: "■ "; color: #555; }
 }
 
 .person-role {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: Andika, Arial, sans-serif;
   font-size: .72rem;
   text-transform: uppercase;
   letter-spacing: .1em;
@@ -208,7 +212,7 @@ ul.bulleted li::before { content: "■ "; color: #555; }
 .site-footer {
   background: #1a1a1a;
   color: #cdcdcd;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: Andika, Arial, sans-serif;
   font-size: .75rem;
   text-align: center;
   padding: .9rem 1rem;
