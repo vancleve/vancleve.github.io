@@ -103,7 +103,6 @@ main {
   flex: 0 0 170px;
   font-size: .82rem;
   font-family: Andika, Arial, sans-serif;
-  border-bottom: 1px solid #ddd;
   position: sticky;
   top: 1.5rem;
 }
@@ -118,11 +117,10 @@ main {
   margin-bottom: .6rem;
   padding-top: .35rem;
   padding-bottom: .35rem;
-  border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
 
-.sidebar ul { list-style: none; }
+.sidebar ul { list-style: none; border-bottom: 1px solid #ddd; padding-bottom: .45rem; margin-bottom: .6rem; }
 
 .sidebar li { margin-bottom: .45rem; }
 
