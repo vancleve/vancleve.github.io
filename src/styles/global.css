@@ -29,25 +29,43 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ─── Header / banner ──────────────────────────────────────── */
 .site-header {
-  background: #1a1a1a;
-  padding: 1.5rem 2rem 0;
-  text-align: center;
+  padding: 0;
 }
 
-.site-header a { color: #fff; }
-.site-header a:hover { text-decoration: none; color: #ccc; }
+.site-header::before {
+  content: '';
+  display: block;
+  background: #1a1a1a;
+  height: 2rem;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem .5rem;
+  background: #fff;
+}
+
+.header-brand { text-align: center; flex: 1; }
+
+.header-heron { height: 175px; width: auto; flex-shrink: 0; }
+
+.site-header a { color: #1a1a1a; }
+.site-header a:hover { text-decoration: none; color: #555; }
 
 .site-title {
   font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
   font-size: 1.9rem;
   font-weight: normal;  line-height: 1.1;  letter-spacing: .03em;
-  color: #fff;
+  color: #1a1a1a;
 }
 
 .site-tagline {
   font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
   font-size: .85rem;
-  color: #fff;
+  color: #555;
   margin-top: 0;
   font-style: italic;
   letter-spacing: .04em;
@@ -55,7 +73,8 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ─── Primary navigation ───────────────────────────────────── */
 nav.primary {
-  margin-top: 1.1rem;
+  margin-top: 0;
+  background: #1a1a1a;
 }
 
 nav.primary ul {
@@ -63,6 +82,7 @@ nav.primary ul {
   display: flex;
   flex-wrap: wrap;
   gap: 0;
+  padding: 0 2rem;
 }
 
 nav.primary li a {
@@ -75,13 +95,15 @@ nav.primary li a {
   text-transform: uppercase;
   color: #ccc;
   border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
   transition: color .15s, border-color .15s;
 }
 
 nav.primary li a:hover,
 nav.primary li a[aria-current="page"] {
   color: #fff;
-  border-top-color: #fff;
+  border-top-color: #2a5db0;
+  border-bottom-color: #2a5db0;
   text-decoration: none;
 }
 
@@ -101,15 +123,11 @@ main {
 /* ─── Sidebar ───────────────────────────────────────────────── */
 .sidebar {
   flex: 0 0 170px;
-  display: flex;
-  flex-direction: column;
   font-size: .82rem;
   font-family: Andika, Arial, sans-serif;
   position: sticky;
   top: 1.5rem;
 }
-
-.sidebar img { order: -1; }
 
 .sidebar-section-title {
   font-size: .68rem;
@@ -233,6 +251,7 @@ ul.bulleted li::before { content: "■ "; color: #555; }
 @media (max-width: 680px) {
   .site-body { flex-direction: column; }
   .sidebar { flex: none; width: 100%; border-top: 1px solid #ddd; padding-top: 1rem; }
-  .sidebar img { order: 1; }
+  .header-top { flex-direction: column; }
+  .header-heron { height: 70px; }
   nav.primary li a { padding: .45rem .7rem; font-size: .7rem; }
 }

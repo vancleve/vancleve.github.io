@@ -32,8 +32,13 @@ const navLinks = [
 <body>
   <div class="site-wrapper">
     <header class="site-header">
-      <a href="/"><p class="site-title">van cleve research group</p></a>
-      <p class="site-tagline">theoretical evolution &amp; ecology @ university of kentucky</p>
+      <div class="header-top">
+        <div class="header-brand">
+          <a href="/"><p class="site-title">van cleve research group</p></a>
+          <p class="site-tagline">theoretical evolution &amp; ecology @ university of kentucky</p>
+        </div>
+        <Image src={heronImg} alt="an integral of the 'heron' function" class="header-heron" />
+      </div>
       <nav class="primary" aria-label="Primary navigation">
         <ul>
           {navLinks.map(link => (
@@ -64,7 +69,6 @@ const navLinks = [
           <li><a href="http://bio.as.uky.edu/" target="_blank" rel="noopener">UK Biology</a></li>
           <li><a href="mailto:jvancleve@uky.edu">E-mail</a></li>
         </ul>
-        <Image src={heronImg} alt="an integral of the 'heron' function" style="width: 100%; margin-bottom: 1rem;" />
       </aside>
     </div>
 
