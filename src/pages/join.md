@@ -24,4 +24,4 @@ and economics.
 When contacting the lab about potentially joining, please send an email to the address below with a short
 summary of your research interests and your CV attached in PDF format.
 
-**Email:** [jvancleve@uky.eduedu](mailto:jvancleve@uky.edu)
+**Email:** [jvancleve@uky.edu](mailto:jvancleve@uky.edu)

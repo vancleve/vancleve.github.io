@@ -1,0 +1,13 @@
+---
+interface Props {
+  name: string;
+  dates: string;
+  photo?: string;
+}
+const { name, dates, photo } = Astro.props;
+---
+<div class="alumni-card">
+  <div class="alumni-photo" style={photo ? `background-image: url('${photo}')` : undefined}></div>
+  <p class="alumni-name">{name}</p>
+  <p class="alumni-dates">{dates}</p>
+</div>

@@ -1,0 +1,14 @@
+---
+interface Props {
+  role: string;
+  photo?: string;
+}
+const { role, photo } = Astro.props;
+---
+<div class="person-entry">
+  <p class="role-label">{role}</p>
+  <div class="person-columns">
+    <div class="person-photo" style={photo ? `background-image: url('${photo}')` : undefined}></div>
+    <div class="person-bio"><slot /></div>
+  </div>
+</div>

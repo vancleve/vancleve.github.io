@@ -163,13 +163,6 @@ h3 { font-size: 1.05rem; margin: 1.2rem 0 .4rem; }
 
 p { margin-bottom: .9rem; }
 
-ol, ul.content-list {
-  padding-left: 1.4rem;
-  margin-bottom: .9rem;
-}
-
-ol li, ul.content-list li { margin-bottom: .5rem; }
-
 /* Default prose lists (Markdown-rendered, no explicit class) */
 main ul:not([class]),
 main ol:not([class]) {
@@ -182,22 +175,6 @@ main ul:not([class]) li,
 main ol:not([class]) li { margin-bottom: .45rem; }
 main ul:not([class]) ul { list-style: circle; margin: .3rem 0 .3rem 0; }
 
-/* People page: role label (italic paragraph immediately after h3) */
-main h3 + p > em:only-child {
-  font-style: normal;
-  font-size: .72rem;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  color: #888;
-  font-family: Andika, Arial, sans-serif;
-  font-weight: 700;
-}
-
-/* Bullet-style list with ■ (used on original site) */
-ul.bulleted { list-style: none; padding-left: 0; }
-ul.bulleted li { padding-left: 1.3em; text-indent: -1.3em; margin-bottom: .45rem; }
-ul.bulleted li::before { content: "■ "; color: #555; }
-
 /* ─── Publication list ──────────────────────────────────────── */
 .pub-list { list-style: none; padding: 0; }
 .pub-list li {
@@ -209,25 +186,83 @@ ul.bulleted li::before { content: "■ "; color: #555; }
 .pub-list li:last-child { border-bottom: none; }
 
 /* ─── People entries ────────────────────────────────────────── */
-.people-section { margin-bottom: 2rem; }
-.people-section h2 { border-bottom: 1px solid #e0e0e0; padding-bottom: .3rem; }
+.person-entry { margin-bottom: 2.5rem; }
+.person-entry h3 { margin-bottom: .2rem; }
 
-.person {
-  display: grid;
-  grid-template-columns: 110px 1fr;
-  gap: 1rem;
-  margin: 1.2rem 0;
-}
-
-.person-role {
+.role-label {
   font-family: Andika, Arial, sans-serif;
   font-size: .72rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .1em;
-  color: #888;
+  color: #222;
+  margin-bottom: .8rem;
+}
+
+.person-columns {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.person-bio p { margin-bottom: 0; }
+
+.person-photo {
+  width: 200px;
+  height: 250px;
+  background-color: #e0e0e0;
+  background-size: cover;
+  background-position: center top;
+  border-radius: 2px;
+  border: 1px solid #1a1a1a;
+}
+
+/* Alumni subsection headings (### immediately before an alumni-grid) */
+h3:has(+ .alumni-grid) {
+  font-family: Andika, Arial, sans-serif;
+  font-size: .72rem;
   font-weight: 700;
-  padding-top: .15rem;
-  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #222;
+  margin: 1rem 0 .5rem;
+}
+
+/* Alumni grid */
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem 1.25rem;
+  margin: .75rem 0 1.5rem;
+}
+
+.alumni-card { text-align: center; }
+
+.alumni-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background-color: #e0e0e0;
+  background-size: cover;
+  background-position: center top;
+  border-radius: 4px;
+  border: 1px solid #1a1a1a;
+  margin-bottom: .4rem;
+}
+
+.alumni-name {
+  font-size: .82rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 .1rem;
+  line-height: 1.3;
+}
+
+.alumni-dates {
+  font-size: .75rem;
+  color: #333;
+  font-family: Andika, Arial, sans-serif;
+  margin: 0;
 }
 
 /* ─── Footer ────────────────────────────────────────────────── */
@@ -240,12 +275,6 @@ ul.bulleted li::before { content: "■ "; color: #555; }
   padding: .9rem 1rem;
 }
 
-.news-item {
-  padding: .4rem 0;
-  border-bottom: 1px solid #eee;
-  font-size: .92rem;
-}
-
 /* ─── Responsive ────────────────────────────────────────────── */
 @media (max-width: 680px) {
   .site-body { flex-direction: column; }
@@ -253,4 +282,6 @@ ul.bulleted li::before { content: "■ "; color: #555; }
   .header-top { flex-direction: column; }
   .header-heron { height: 70px; }
   nav.primary li a { padding: .45rem .7rem; font-size: .7rem; }
+  .person-columns { grid-template-columns: 120px 1fr; }
+  .person-photo { width: 120px; height: 150px; }
 }
