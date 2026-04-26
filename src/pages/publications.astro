@@ -19,7 +19,7 @@ interface CSLItem {
 // For items with a DOI, strip URL and accessed fields.
 function preprocessItem(item: CSLItem): CSLItem {
   if (item.DOI) {
-    const { URL: _url, accessed: _accessed, ...rest } = item;
+    const { URL: _url, accessed: _accessed, 'collection-title': _series, ...rest } = item;
     return rest as CSLItem;
   }
   return item;
