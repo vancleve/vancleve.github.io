@@ -101,11 +101,15 @@ main {
 /* ─── Sidebar ───────────────────────────────────────────────── */
 .sidebar {
   flex: 0 0 170px;
+  display: flex;
+  flex-direction: column;
   font-size: .82rem;
   font-family: Andika, Arial, sans-serif;
   position: sticky;
   top: 1.5rem;
 }
+
+.sidebar img { order: -1; }
 
 .sidebar-section-title {
   font-size: .68rem;
@@ -117,6 +121,7 @@ main {
   margin-bottom: .6rem;
   padding-top: .35rem;
   padding-bottom: .35rem;
+  border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
 
@@ -228,5 +233,6 @@ ul.bulleted li::before { content: "■ "; color: #555; }
 @media (max-width: 680px) {
   .site-body { flex-direction: column; }
   .sidebar { flex: none; width: 100%; border-top: 1px solid #ddd; padding-top: 1rem; }
+  .sidebar img { order: 1; }
   nav.primary li a { padding: .45rem .7rem; font-size: .7rem; }
 }
