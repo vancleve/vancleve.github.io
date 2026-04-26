@@ -3,7 +3,7 @@ layout: ../layouts/Layout.astro
 currentPage: home
 ---
 
-<img class="hero-image" src="/images/heron.png" alt="an integral of the 'heron' function" width="180" />
+<img class="heron-image" src="/images/heron.png" alt="an integral of the 'heron' function" width="180" />
 
 Our lab is located in the [Department of Biology](http://bio.as.uky.edu/) at the
 [University of Kentucky](http://www.uky.edu/).

@@ -12,7 +12,7 @@ conceptual questions in evolution and ecology. Folks whose interests overlap wit
 previous [research](/research/) and [publications](/publications/) from the lab are
 certainly encouraged to contact us.
 
-The lab aims to be broadly interdisciplinary across complex biological systems from the
+Additionally, the lab aims to be broadly interdisciplinary across complex biological systems from the
 molecular to metapopulation scales, and we welcome inquiries from folks with diverse
 backgrounds including (but not limited to) mathematics, physics, computer science,
 and economics.
@@ -21,7 +21,7 @@ and economics.
   [Biology Graduate Program](http://bio.as.uky.edu/grad-program) at UK.
 - **Postdoctoral scholars:** Inquiries from prospective postdocs are actively encouraged.
 
-When contacting the lab about potentially joining, please send an email with a short
+When contacting the lab about potentially joining, please send an email to the address below with a short
 summary of your research interests and your CV attached in PDF format.
 
-**Email:** [jvancleve –at– uky –dot– edu](mailto:jvancleve@uky.edu)
+**Email:** [jvancleve@uky.eduedu](mailto:jvancleve@uky.edu)
