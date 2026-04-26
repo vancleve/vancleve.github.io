@@ -1,20 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import CSL from 'citeproc';
+import type { Data as CSLItem } from 'csl-json';
 
 const ZOTERO_USER_ID = '2209856';
 const ZOTERO_COLLECTION_KEY = 'ISBLYB53';
 const CITATION_STYLE = 'genetics';
 
 const apiKey = import.meta.env.ZOTERO_API_KEY;
-
-interface CSLItem {
-  id: string;
-  type: string;
-  DOI?: string;
-  issued?: { 'date-parts': number[][] };
-  [key: string]: unknown;
-}
 
 // For items with a DOI, strip URL and accessed fields.
 function preprocessItem(item: CSLItem): CSLItem {
