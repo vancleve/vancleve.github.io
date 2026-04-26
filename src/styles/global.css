@@ -104,6 +104,8 @@ main {
   font-size: .82rem;
   font-family: Andika, Arial, sans-serif;
   border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 1.5rem;
 }
 
 .sidebar-section-title {
