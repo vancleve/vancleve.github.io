@@ -10,16 +10,16 @@ currentPage: people
 *Principal Investigator*
 
 Jeremy grew up in wonderful Santa Fe, NM and attended [Oberlin College](http://www.oberlin.edu/).
-After Oberlin, he spent a year living in Boulder, CO and worked with [Rob Guralnick](http://sites.google.com/site/robgur/)
+After Oberlin, he spent a year living in Boulder, CO and worked with [Rob Guralnick](https://www.gurlab.net/)
 at the [University of Colorado](http://www.colorado.edu/). He then moved to the Bay Area and completed a Ph.D. at
-[Stanford University](http://www.stanford.edu/) in the laboratory of [Marc Feldman](http://www-evo.stanford.edu/).
+[Stanford University](http://www.stanford.edu/) in the laboratory of [Marc Feldman](https://profiles.stanford.edu/marcus-feldman).
 From late 2009 to 2012, he was a SFI Omidyar Fellow at the [Santa Fe Institute](http://www.santafe.edu/).
 He was a Postdoctoral Fellow at the [National Evolutionary Synthesis Center (NESCent)](http://www.nescent.org/)
 during 2013–2014. Jeremy started as an Assistant Professor at the
-[University of Kentucky](http://uky.edu/) in January 2015.
+[University of Kentucky](http://www.uky.edu/) in January 2015.
 
-### David Espinosa
-*Graduate student*
+### David Priego-Espinosa
+*Postdoctoral scholar*
 
 David received his bachelor's degree from UNAM. Since 2020, he has been working on
 evolutionary theory and population genetics.
