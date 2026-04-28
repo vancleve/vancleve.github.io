@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import landscapesImg from '../assets/images/landscapes.jpg';
 import CSL from 'citeproc';
 import type { Data as CSLItem } from 'csl-json';
 
@@ -113,6 +115,8 @@ const publications = cslItems
   .filter((html): html is string => html !== undefined);
 ---
 <Layout title="Publications" currentPage="publications">
+  <Image src={landscapesImg} class="centered-img" alt="Landscapes" style="margin-bottom: 1.5rem;" />
+  <h2>Publications</h2>
   <ul class="pub-list">
     {publications.map((html) => <li set:html={html} />)}
   </ul>
